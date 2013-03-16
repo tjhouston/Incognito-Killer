@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo Welcome to Incognito Killer 
+echo  Developed by TJ Houston 
+echo 1 8 2013
+
+echo Closing Chrome
+
+killall "Google Chrome"
+defaults  write ~/Library/Preferences/com.google.Chrome.plist IncognitoModeAvailability -int 0
+
+echo Incognito Is No Longer Disabled
